@@ -9,4 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB49 extends Model
 {
     use HasFactory;
+    
+    protected $fillable = [
+        'DteConnexion',
+        'HeureDeb',
+        'HeureFin',
+    ];
 }

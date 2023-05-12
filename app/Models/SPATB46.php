@@ -9,4 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB46 extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'LibAction'
+    ];
+    
 }

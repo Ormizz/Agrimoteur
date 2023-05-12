@@ -9,4 +9,11 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB45 extends Model
 {
     use HasFactory;
+
+    
+    protected $table = 'spatb45';
+
+    protected $fillable = [
+        'LibNiveauAcces'
+    ];
 }

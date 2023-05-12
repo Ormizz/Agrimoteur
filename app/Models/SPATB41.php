@@ -9,4 +9,16 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB41 extends Model
 {
     use HasFactory;
+
+    protected $table = 'SPATB41';
+
+    protected $fillable = [
+        'id',
+        'NatureSexe'
+    ];
+
+    public function SPATB40()
+    {
+        return $this->hasMany(SPATB40::class, 'idSexe');
+    }
 }

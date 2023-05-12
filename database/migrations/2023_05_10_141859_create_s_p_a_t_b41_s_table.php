@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //table Sexe 
         Schema::create('spatb41', function (Blueprint $table) {
-            $table->id();
+            $table->string('id')->primary();
             $table->string("NatureSexe");
             $table->timestamps();
         });
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('s_p_a_t_b41_s');
+        Schema::dropIfExists('spatb41');
     }
 };

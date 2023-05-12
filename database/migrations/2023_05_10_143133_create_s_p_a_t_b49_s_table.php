@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //table connecter 
         Schema::create('spatb49', function (Blueprint $table) {
-            //$table->id();
+            $table->id();
             $table->date("DteConnexion");
             $table->time("HeureDeb");
             $table->time("HeureFin");
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('s_p_a_t_b49_s');
+        Schema::dropIfExists('spatb49');
     }
 };

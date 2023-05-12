@@ -9,4 +9,11 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB44 extends Model
 {
     use HasFactory;
+
+    
+    protected $table = 'spatb44';
+
+    protected $fillable = [
+        'LibFonctions',
+    ];
 }
