@@ -5,7 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
+ //table planteur
 class SPATB10 extends Model
-{
+{ 
     use HasFactory;
+
+    protected $table='spatb010';
+
+    protected $fillable =[
+        'Nom',
+        'Prenom',
+        'Adresse',
+        'NbreParcelle'
+    ];
 }

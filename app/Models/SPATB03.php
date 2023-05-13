@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB03 extends Model
 {
     use HasFactory;
+
+    protected $table='spatb03';
+
     protected $fillable =[
         'LibModelePaiement'
     ];
