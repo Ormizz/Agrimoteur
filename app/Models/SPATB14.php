@@ -9,4 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB14 extends Model
 {
     use HasFactory;
+    protected $table='spatb14';
+
+    protected $fillable=[
+        
+        'LibCalibre' 
+    ];
 }

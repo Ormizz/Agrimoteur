@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB15 extends Model
 {
     use HasFactory;
+    protected $table = 'SPATB15';
+
+    protected $fillable = [
+        'Localisation'
+    ];
+   
 }

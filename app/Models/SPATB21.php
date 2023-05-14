@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class SPATB21 extends Model
 {
     use HasFactory;
+    protected $table = 'SPATB21';
+
+    protected $fillable = [
+    'QteProduction'
+    'DateProduction'
+    ];
+    
 }
