@@ -13,7 +13,7 @@ class SPATB41 extends Model
     protected $table = 'SPATB41';
 
     protected $fillable = [
-        'id',
+        'idSexe',
         'NatureSexe'
     ];
 

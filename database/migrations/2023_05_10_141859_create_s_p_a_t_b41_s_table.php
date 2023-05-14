@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //table Sexe 
+        //table Sexe
         Schema::create('spatb41', function (Blueprint $table) {
-            $table->string('id')->primary();
+            $table->string('idSexe')->primary();
             $table->string("NatureSexe");
             $table->timestamps();
         });

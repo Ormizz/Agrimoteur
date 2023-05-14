@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string("Prenom");
             $table->date("DteNaissance");
             $table->string("Status");
-            $table->string("idSexe")->foreign("idSexe")->references("id")->on("SPATB41");
+            $table->string("idSexe")->foreign("idSexe")->references("idSexe")->on("SPATB41");
             $table->timestamps();
         });
     }
