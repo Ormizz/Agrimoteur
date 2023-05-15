@@ -12,7 +12,13 @@ class SPATB20 extends Model
 
     protected $fillable = [
         'Libemballage',
+        'idCalibre'
     ];
+
+    public function SPATB14()
+    {
+        return $this-> belongsto(SPATB14:: class,'idCalibre');
+    }
    
 
 }

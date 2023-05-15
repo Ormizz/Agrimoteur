@@ -11,8 +11,13 @@ class SPATB34 extends Model
     protected $table = 'SPATB34';
 
     protected $fillable = [
-        'Libelle'
+        'Libelle',
+        'idPays'
     ];
+    public function SPATB33()
+    {
+        return $this-> belongsto(SPATB33:: class,'idPays');
+    }
     
     
 };
