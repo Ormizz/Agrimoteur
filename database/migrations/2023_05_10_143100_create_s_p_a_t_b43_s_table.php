@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //type-utlisateur
         Schema::create('spatb43', function (Blueprint $table) {
-            $table->id();
+            $table->string('idTypeUtilisateur')->primary();
             $table->string("LibTypeUtilisateur");
             $table->timestamps();
         });
