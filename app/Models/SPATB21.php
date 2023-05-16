@@ -11,8 +11,17 @@ class SPATB21 extends Model
     protected $table = 'SPATB21';
 
     protected $fillable = [
-    'QteProduction'
-    'DateProduction'
+    'QteProduction',
+    'DateProduction',
+    'idParcelle',
+    'idCalibre'
     ];
-    
+    public function SPATB14()
+    {
+        return $this-> belongsto(SPATB14:: class,'idCalibre');
+    }
+    public function SPATB15()
+    {
+        return $this-> belongsto(SPATB15:: class,'idParcelle');
+    }
 }

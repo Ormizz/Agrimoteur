@@ -11,7 +11,19 @@ class SPATB15 extends Model
     protected $table = 'SPATB15';
 
     protected $fillable = [
-        'Localisation'
+        'Localisation',
+        'idPlanteur',
+        'idProdAgricole'
     ];
+
+    public function SPATB10()
+    {
+        return $this-> belongsto(SPATB10:: class,'idPlanteur');
+    }
+
+    public function SPATB13()
+    {
+        return $this-> belongsto(SPATB13:: class,'idProdAgricole');
+    }
    
 }
