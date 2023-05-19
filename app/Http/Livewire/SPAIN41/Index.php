@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\SPATB41;
+namespace App\Http\Livewire\SPAIN41;
 
 use Livewire\Component;
 use App\Models\SPATB41;
@@ -16,7 +16,7 @@ class Index extends Component
 
     public function render()
     {
-        return view('livewire.s-p-a-t-b41.index')->layout('welcome');
+        return view('livewire.s-p-a-i-n41.index')->layout('welcome');
     }
 
     public function sexelist()

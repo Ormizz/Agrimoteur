@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-//table type-utilisateur 
+//table type-utilisateur
 class SPATB43 extends Model
 {
     use HasFactory;
@@ -13,6 +13,7 @@ class SPATB43 extends Model
     protected $table = 'spatb43';
 
     protected $fillable = [
+        'idTypeUtilisateur',
         'LibTypeUtilisateur'
     ];
 }

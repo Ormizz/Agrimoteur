@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\SPATB41;
+namespace App\Http\Livewire\SPAIN41;
 
 use Livewire\Component;
 use App\Models\SPATB41;
@@ -12,7 +12,7 @@ class Create extends Component
 
     public function render()
     {
-        return view('livewire.s-p-a-t-b41.create')->layout('welcome');
+        return view('livewire.s-p-a-i-n41.create')->layout('welcome');
     }
 
     public function addSexe(){
@@ -20,7 +20,6 @@ class Create extends Component
         $sexe->idSexe = $this->num;
         $sexe->NatureSexe = $this->NatureSexe;
         $sexe->save();
-        $this->num = $this->NatureSexe = "";
-        return redirect()->to('/SPATB41');
+        return redirect()->to('/SPAIN41');
     }
 }
