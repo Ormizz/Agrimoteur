@@ -12,6 +12,7 @@ class SPATB40 extends Model
     protected $table = 'SPATB40';
 
     protected $fillable = [
+        'idPers',
         'Nom',
         'Prenom',
         'DteNaissance',

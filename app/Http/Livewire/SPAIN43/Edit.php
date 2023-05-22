@@ -19,13 +19,13 @@ class Edit extends Component
 
     public function render()
     {
-        return view('livewire.s-p-a-i-n43.edit')->layout('welcome');
+        return view('livewire.s-p-a-i-n43.edit')->layout('layouts.app');
     }
 
     public function update()
     {
-        $this->oneTypeUser->where('idTypeUtilisateur', $this->idType)->update([
-            'idTypeUtilisateur' => $this->typeuserid,
+        $this->oneTypeUser->where('idTypeUtilisateur', $this->typeuserid)->update([
+            'idTypeUtilisateur' => $this->idType,
             'LibTypeUtilisateur' => $this->libTypeUser
         ]);
 

@@ -26,8 +26,9 @@ class Index extends Component
 
     public function destroy($idSexe)
     {
+        echo $idSexe;
         $this->onesexe = SPATB41::findorfail($idSexe);
-        dd($this->onesexe);
+        dd();
         $this->onesexe->delete();
         $this->sexelist();
     }

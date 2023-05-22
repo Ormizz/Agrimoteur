@@ -14,7 +14,6 @@ class Edit extends Component
     public function mount($idSexe){
         $this->idSexe= $idSexe;
         $this->onesexe = SPATB41::where('idSexe', $idSexe)->first();
-        echo $this->onesexe;
         $this->num= $this->onesexe->idSexe;
         $this->NatureSexe = $this->onesexe->NatureSexe;
     }
