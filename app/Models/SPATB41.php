@@ -12,6 +12,8 @@ class SPATB41 extends Model
 
     protected $table = 'SPATB41';
 
+    protected $primaryKey = 'idSexe';
+
     protected $fillable = [
         'idSexe',
         'NatureSexe'

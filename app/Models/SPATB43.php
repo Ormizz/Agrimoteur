@@ -12,6 +12,8 @@ class SPATB43 extends Model
 
     protected $table = 'spatb43';
 
+    protected $primaryKey = 'idTypeUtilisateur';
+
     protected $fillable = [
         'idTypeUtilisateur',
         'LibTypeUtilisateur'

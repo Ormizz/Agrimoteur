@@ -26,6 +26,6 @@ class Index extends Component
     {
         $this->typeuserFinding = SPATB43::findorfail($idTypeUtilisateur);
         $this->typeuserFinding->delete();
-        typeuserlist();
+        $this->typeuserlist();
     }
 }

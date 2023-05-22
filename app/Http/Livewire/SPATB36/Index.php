@@ -28,6 +28,6 @@ class Index extends Component
     {
         $this->exportationFinding = SPATB36::findorfail($idExportation);
         $this->exportationFinding->delete();
-        exportationList();
+        $this->exportationList();
     }
 }

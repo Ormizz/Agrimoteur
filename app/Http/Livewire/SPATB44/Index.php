@@ -28,6 +28,6 @@ class Index extends Component
     {
         $this->functionFinding = SPATB44::findorfail($idFunction);
         $this->functionFinding->delete();
-        functionList();
+        $this->functionList();
     }
 }

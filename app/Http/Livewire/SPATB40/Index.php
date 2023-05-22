@@ -27,6 +27,6 @@ class Index extends Component
     {
         $this->personnalFinding = SPATB40::findorfail($idPers);
         $this->personnalFinding->delete();
-        personnalList();
+        $this->personnalList();
     }
 }
