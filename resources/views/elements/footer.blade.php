@@ -89,6 +89,7 @@
 <script src="{{asset('assets/theme_assets/js/jvectormap-init.js')}}"></script>
 <script src="{{asset('assets/theme_assets/js/leaflet-init.js')}}"></script>
 <script src="{{asset('assets/theme_assets/js/main.js')}}"></script>
+<script src="{{asset('bootstrapcssjs/js/bootstrap.min.js')}}"></script>
 <!-- endinject-->
 </body>
 

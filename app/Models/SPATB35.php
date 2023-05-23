@@ -10,7 +10,7 @@ class SPATB35 extends Model
 {
     use HasFactory;
     protected $table = 'SPATB35';
-    
+
     protected $fillable = [
         'LibNavire'
     ];

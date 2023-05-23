@@ -18,6 +18,6 @@ class SPATB34 extends Model
     {
         return $this-> belongsto(SPATB33:: class,'idPays');
     }
-    
-    
+
+
 };

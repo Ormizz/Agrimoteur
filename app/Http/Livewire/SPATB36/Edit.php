@@ -23,7 +23,7 @@ class Edit extends Component
 
     public function render()
     {
-        return view('livewire.s-p-a-t-b36.edit');
+        return view('livewire.s-p-a-t-b36.edit')->layout('layouts.app');
     }
 
     public function update()
