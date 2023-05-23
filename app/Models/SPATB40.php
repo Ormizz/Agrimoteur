@@ -11,7 +11,12 @@ class SPATB40 extends Model
 
     protected $table = 'SPATB40';
 
+    public $incrementing = false;
+
+    protected $keyType = 'string';
+
     protected $fillable = [
+        'idPers',
         'Nom',
         'Prenom',
         'DteNaissance',

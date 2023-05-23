@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //table fonctions
         Schema::create('spatb44', function (Blueprint $table) {
-            $table->id();
+            $table->string('idFunction');
             $table->string("LibFonctions");
             $table->timestamps();
         });

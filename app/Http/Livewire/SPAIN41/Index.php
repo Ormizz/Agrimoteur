@@ -12,11 +12,12 @@ class Index extends Component
 
     public function mount(){
         $this->sexelist();
+        $this->sexes = SPATB41::all();
     }
 
     public function render()
     {
-        return view('livewire.s-p-a-i-n41.index')->layout('welcome');
+        return view('livewire.s-p-a-i-n41.index')->layout('layouts.app');
     }
 
     public function sexelist()
@@ -24,11 +25,12 @@ class Index extends Component
         $this->sexes = SPATB41::all();
     }
 
-    public function destroy($idSexe)
+    public function destroy($Sexe)
     {
-        $this->onesexe = SPATB41::findorfail($idSexe);
-        dd($this->onesexe);
+        // dd($Sexe['idSexe']);
+        $this->onesexe = SPATB41::findorfail($Sexe['idSexe']);
         $this->onesexe->delete();
+        // dd($this->onesexe->delete());
         $this->sexelist();
     }
 

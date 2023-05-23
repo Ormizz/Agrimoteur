@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // table exporter 
+        // table exporter
         Schema::create('spatb36', function (Blueprint $table) {
             $table->id();
             $table->string("idNavire")->foreign("idNavire")->references("id")->on("SPATB35");
