@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //hormoner
         Schema::create('spatb17', function (Blueprint $table) {
-            $table->id();
+            $table->string("")->primary();
             $table->string("idPhyto")->foreign("idPhyto")->references("id")->on("SPATB12");
             $table->string("idParcelle")->foreign("idParcelle")->references("id")->on("SPATB15");
             $table->date("DteHormonage");

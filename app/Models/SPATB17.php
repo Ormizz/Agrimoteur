@@ -11,7 +11,8 @@ class SPATB17 extends Model
     protected $table = 'SPATB17';
 
     protected $fillable = [
-    'DateHormonage',
+    'idParcelle',
+    'DteHormonage',
     'NbrePlantHormoner',
     'idPhyto',
     'idParcelle'
