@@ -121,7 +121,7 @@
                                            </a>
                                         </li>
                                         <li>
-                                           <a wire:click="destroy({{$typeuser->idTypeUtilisateur}})" class="edit">
+                                           <a wire:click="destroy({{$typeuser}})" class="remove">
                                               <i class="uil uil-trash-alt"></i>
                                            </a>
                                         </li>

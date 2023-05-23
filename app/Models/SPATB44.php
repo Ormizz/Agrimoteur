@@ -13,6 +13,10 @@ class SPATB44 extends Model
 
     protected $table = 'spatb44';
 
+    public $incrementing = false;
+
+    protected $keyType = 'string';
+
     protected $fillable = [
         'idFunction',
         'LibFonctions',

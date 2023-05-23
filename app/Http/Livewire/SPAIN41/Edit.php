@@ -13,6 +13,7 @@ class Edit extends Component
 
     public function mount($idSexe){
         $this->idSexe= $idSexe;
+
         $this->onesexe = SPATB41::where('idSexe', $idSexe)->first();
         $this->num= $this->onesexe->idSexe;
         $this->NatureSexe = $this->onesexe->NatureSexe;
@@ -20,11 +21,12 @@ class Edit extends Component
 
     public function render()
     {
-        return view('livewire.s-p-a-i-n41.edit')->layout('welcome');
+        return view('livewire.s-p-a-i-n41.edit')->layout('layouts.app');
     }
 
     public function update()
     {
+
         $this->onesexe->where('idSexe', $this->idSexe)->update([
             'idSexe' => $this->num,
             'NatureSexe' => $this->NatureSexe

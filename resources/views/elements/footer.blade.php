@@ -44,12 +44,6 @@
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBgYKHZB_QKKLWfIRaYPCadza3nhTAbv7c"></script>
 <!-- inject:js-->
 @livewireScripts()
-@livewire('livewire-ui-modal')
-<!-- Alpine v3 -->
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-<!-- Focus plugin -->
-<script defer src="https://unpkg.com/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
 <script src="{{asset('assets/vendor_assets/js/jquery/jquery-3.5.1.min.js')}}"></script>
 <script src="{{asset('assets/vendor_assets/js/jquery/jquery-ui.js')}}"></script>
 <script src="{{asset('assets/vendor_assets/js/bootstrap/popper.js')}}"></script>

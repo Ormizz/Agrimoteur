@@ -22,9 +22,9 @@ class Index extends Component
     {
         return view('livewire.s-p-a-i-n43.index')->layout('layouts.app');
     }
-    public function destroy($idTypeUtilisateur)
+    public function destroy($typeuser)
     {
-        $this->typeuserFinding = SPATB43::findorfail($idTypeUtilisateur);
+        $this->typeuserFinding = SPATB43::findorfail($typeuser['idTypeUtilisateur']);
         $this->typeuserFinding->delete();
         $this->typeuserlist();
     }

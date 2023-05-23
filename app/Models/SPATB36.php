@@ -11,6 +11,10 @@ class SPATB36 extends Model
 
     protected $table = 'SPATB36';
 
+    public $incrementing = false;
+
+    protected $keyType = 'string';
+
     protected $fillable = [
         'idNavire',
         'idVille',

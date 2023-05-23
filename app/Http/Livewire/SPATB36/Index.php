@@ -24,9 +24,9 @@ class Index extends Component
         return view('livewire.s-p-a-t-b36.index');
     }
 
-    public function destroy($idExportation)
+    public function destroy($Exportation)
     {
-        $this->exportationFinding = SPATB36::findorfail($idExportation);
+        $this->exportationFinding = SPATB36::findorfail($Exportation['']);
         $this->exportationFinding->delete();
         $this->exportationList();
     }
