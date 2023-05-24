@@ -11,7 +11,7 @@ class Index extends Component
     public $exportationList, $exportationFinding;
 
     public function mount(){
-        exportationList();
+        $this->exportationList();
     }
 
     public function exportationList()
@@ -21,12 +21,12 @@ class Index extends Component
 
     public function render()
     {
-        return view('livewire.s-p-a-t-b36.index');
+        return view('livewire.s-p-a-t-b36.index')->layout('layouts.app');
     }
 
     public function destroy($Exportation)
     {
-        $this->exportationFinding = SPATB36::findorfail($Exportation['']);
+        $this->exportationFinding = SPATB36::findorfail($Exportation['id']);
         $this->exportationFinding->delete();
         $this->exportationList();
     }

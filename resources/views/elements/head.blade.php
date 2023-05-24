@@ -45,6 +45,8 @@
 
    <link rel="stylesheet" href="{{asset('assets/vendor_assets/css/wickedpicker.min.css')}}">
 
+   <link rel="stylesheet" href="{{asset('bootstrapcssjs/css/bootstrap.min.css')}}">
+
    <link rel="stylesheet" href="{{asset('style.css')}}">
 
    <!-- endinject -->
