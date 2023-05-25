@@ -18,9 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/SPATB41', \App\Http\Livewire\SPATB41\Index::class)->name('SPATB41List');
-Route::get('/SPATB41/create', \App\Http\Livewire\SPATB41\Create::class)->name('SPATB41Create');
-Route::get('/SPATB41/edit/{idSexe}', \App\Http\Livewire\SPATB41\Edit::class)->name('SPATB41Edit');
 
 //SPATB41 Crud
 Route::get('/SPAIN41', \App\Http\Livewire\SPAIN41\Index::class)->name('SPAIN41List');
