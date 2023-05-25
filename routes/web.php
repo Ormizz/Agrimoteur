@@ -84,18 +84,5 @@ Route::get('/SPATB44', \App\Http\Livewire\SPATB44\Index::class)->name('SPAIN44Li
 Route::get('/SPATB44/create', \App\Http\Livewire\SPATB44\Create::class)->name('SPAIN44Create');
 Route::get('/SPATB44/edit/{fonctionid}', \App\Http\Livewire\SPATB44\Edit::class)->name('SPAIN44Edit');
 
-//SPATB40 Crud
-Route::get('/SPAIN40', \App\Http\Livewire\SPATB40\Index::class)->name('SPAIN40List');
-Route::get('/SPAIN40/create', \App\Http\Livewire\SPATB40\Create::class)->name('SPAIN40Create');
-Route::get('/SPAIN40/edit/{personnelid}', \App\Http\Livewire\SPATB40\Edit::class)->name('SPAIN40Edit');
 
-//SPATB36 Crud
-Route::get('/SPAIN36', \App\Http\Livewire\SPATB36\Index::class)->name('SPAIN36List');
-Route::get('/SPAIN36/create', \App\Http\Livewire\SPATB36\Create::class)->name('SPAIN36Create');
-Route::get('/SPAIN36/edit/{Navireid}', \App\Http\Livewire\SPATB36\Edit::class)->name('SPAIN36Edit');
-
-//SPATB44 Crud
-Route::get('/SPAIN44', \App\Http\Livewire\SPATB44\Index::class)->name('SPAIN44List');
-Route::get('/SPAIN44/create', \App\Http\Livewire\SPATB44\Create::class)->name('SPAIN44Create');
-Route::get('/SPAIN44/edit/{fonctionid}', \App\Http\Livewire\SPATB44\Edit::class)->name('SPAIN44Edit');
 
