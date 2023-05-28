@@ -11,7 +11,7 @@ class Index extends Component
 
     public function mount()
     {
-        functionList();
+        $this->functionList();
     }
 
     public function functionList()

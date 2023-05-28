@@ -7,13 +7,14 @@ use App\Models\SPATB44;
 
 class Edit extends Component
 {
-    public $functionid, $libfunc, $functionfinding, $idfunc;
+    public $idFunction, $LibFonctions, $functionfinding, $idfunc;
 
-    public function mount($idfunc){
-        $this->functionfinding = SPATB43::where('idFunction', $idfunc)->first();
+    public function mount($fonctionid){
+        $this->idfunc = $fonctionid;
+        $this->functionfinding = SPATB44::where('idFunction', $this->idfunc)->first();
         echo $this->functionfinding;
-        $this->functionid= $this->functionfinding->idFunction;
-        $this->libfunc = $this->functionfinding->LibFonctions;
+        $this->idFunction= $this->functionfinding->idFunction;
+        $this->LibFonctions = $this->functionfinding->LibFonctions;
     }
 
     public function render()
@@ -24,8 +25,8 @@ class Edit extends Component
     public function update()
     {
         $this->functionfinding->where('idFunction', $this->idfunc)->update([
-            'idFunction' => $this->functionid,
-            'LibFonctions' => $this->libfunc
+            'idFunction' => $this->idFunction,
+            'LibFonctions' => $this->LibFonctions
         ]);
 
         return redirect()->to('/SPAIN44');
