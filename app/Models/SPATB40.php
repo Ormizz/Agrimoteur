@@ -24,7 +24,7 @@ class SPATB40 extends Model
         'idSexe',
     ];
 
-    public function sexe()
+    public function SPATB41()
     {
         return $this->belongsTo(SPATB41::class, 'idSexe');
     }

@@ -11,7 +11,7 @@ class Index extends Component
 
     public function mount()
     {
-        personnalList();
+        $this->personnalList();
     }
     public function personnalList()
     {

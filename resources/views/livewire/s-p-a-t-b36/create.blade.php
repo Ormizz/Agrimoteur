@@ -47,7 +47,7 @@
                                            <label for="countryOption">
                                               Navire
                                            </label>
-                                           <select class="js-example-basic-single js-states form-control">
+                                           <select wire:model="idNavire" class="js-example-basic-single js-states form-control">
                                             <option value="" selected disabled>Please Select</option>
                                             @foreach ($navireList as $navire)
                                                 <option value="{{$navire->id}}">{{$navire->LibNavire}}</option>
@@ -62,7 +62,7 @@
                                            <label for="countryOption">
                                               Ville
                                            </label>
-                                           <select class="js-example-basic-single js-states form-control">
+                                           <select wire:model="idVille" class="js-example-basic-single js-states form-control">
                                             <option value="" selected disabled>Please Select</option>
                                             @foreach ($exportationList as $exportation)
                                                 <option value="{{$exportation->SPATB34->id}}">{{$exportation->SPATB34->libelle}}</option>
@@ -76,7 +76,7 @@
                                            <label for="countryOption">
                                               Lettre de voiture
                                            </label>
-                                           <select class="js-example-basic-single js-states form-control">
+                                           <select wire:model="NumLettreVoiture" class="js-example-basic-single js-states form-control">
                                             <option value="" selected disabled>Please Select</option>
                                             @foreach ($exportationList as $exportation)
                                                 <option value="{{$exportation->SPATB35->id}}">{{$exportation->SPATB35->libelle}}</option>
