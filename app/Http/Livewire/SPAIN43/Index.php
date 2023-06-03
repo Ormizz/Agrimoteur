@@ -8,6 +8,7 @@ use App\Models\SPATB43;
 class Index extends Component
 {
     public $typeuserlist, $typeuserFinding;
+    public $typeuser, $typeid, $typelib;
 
     public function mount()
     {
@@ -27,5 +28,13 @@ class Index extends Component
         $this->typeuserFinding = SPATB43::findorfail($typeuser['idTypeUtilisateur']);
         $this->typeuserFinding->delete();
         $this->typeuserlist();
+    }
+
+    public function addtypeuser(){
+        $typeuser = new SPATB43();
+        $typeuser->idTypeUtilisateur = $this->typeid;
+        $typeuser->LibTypeUtilisateur = $this->typelib;
+        $typeuser->save();
+        return redirect()->to('/SPAIN43');
     }
 }

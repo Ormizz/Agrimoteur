@@ -1,8 +1,8 @@
 /*
 Template Name: HexaDash
-Template URI: 
+Template URI:
 Author: SovWare
-Author URI: 
+Author URI:
 Version: 1.1.0
 NB: this file contains the list of components/scss partial along with the style.scss contents order.
 
@@ -4051,7 +4051,7 @@ body.top-menu .navbar-left .customizer-trigger + .top-menu {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 9988;
+  z-index: 1000;
   background: var(--main-color);
   box-shadow: 0 5px 20px rgba(var(--color-lighten-rgba), 0.05);
 }

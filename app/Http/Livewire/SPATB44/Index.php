@@ -24,9 +24,9 @@ class Index extends Component
         return view('livewire.s-p-a-t-b44.index');
     }
 
-    public function destroy($idFunction)
+    public function destroy($Function)
     {
-        $this->functionFinding = SPATB44::findorfail($idFunction);
+        $this->functionFinding = SPATB44::findorfail($Function['idFunction']);
         $this->functionFinding->delete();
         $this->functionList();
     }

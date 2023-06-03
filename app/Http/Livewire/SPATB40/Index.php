@@ -23,9 +23,9 @@ class Index extends Component
         return view('livewire.s-p-a-t-b40.index');
     }
 
-    public function destroy($idPers)
+    public function destroy($personnal)
     {
-        $this->personnalFinding = SPATB40::findorfail($idPers);
+        $this->personnalFinding = SPATB40::findorfail($personnal['idPers']);
         $this->personnalFinding->delete();
         $this->personnalList();
     }
