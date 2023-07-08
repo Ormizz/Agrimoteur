@@ -12,13 +12,13 @@
                          <span class="sub-title ms-sm-25 ps-sm-25"></span>
                       </div>
                       <div class="action-btn mt-sm-0 mt-15">
-                         {{-- <a href="{{route('SPAIN43Create')}}" class="btn px-20 btn-primary ">
+                         <a href="{{route('SPAIN43Create')}}" class="btn px-20 btn-primary ">
                             <i class="las la-plus fs-16"></i>Add New Type user
-                         </a> --}}
+                         </a>
                            <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    {{-- <button type="button" class="btn btn-primary">
                         <i class="las la-plus fs-16"></i>Add New Type user
-                    </button>
+                    </button> --}}
                       </div>
                    </div>
                    <div class="breadcrumb-main__wrapper">
@@ -122,6 +122,11 @@
                                               <i class="uil uil-edit"></i>
                                            </a>
                                         </li>
+                                        {{-- <li>
+                                           <a href="#" wire:click="show('{{$typeuser->idTypeUtilisateur}}')" class="edit">
+                                              <i class="uil uil-edit"></i>
+                                           </a>
+                                        </li> --}}
                                         <li>
                                            <a wire:click="destroy({{$typeuser}})" class="remove">
                                               <i class="uil uil-trash-alt"></i>
@@ -170,42 +175,5 @@
           </div>
        </div>
     </div>
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="card add-product p-sm-30 p-20 mb-30">
-                <div class="card-body p-0">
-                   <div class="add-product__body px-sm-40 px-20">
-                      <!-- Start: form -->
 
-                      <form>
-                         <!-- form group -->
-                         <div class="form-group">
-                            <label for="name1">ID Type User</label>
-                            <input type="text" class="form-control" wire:model.defer="typeid" id="name1" placeholder="ID">
-                         </div>
-
-                         <!-- form group 1 -->
-                         <div class="form-group">
-                            <label for="name2">Libellé</label>
-                            <input type="text" class="form-control" wire:model.defer="typelib" id="name2" placeholder="Libellé">
-                         </div>
-                   </div>
-                   <!-- End: card body -->
-                </div>
-             </div>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <button type="button" wire:click="addtypeuser" data-bs-dismiss="modal" class="btn btn-primary btn-squared text-capitalize">Understood</button>
-        </div>
-    </div>
-    </div>
-</div>
  </div>
