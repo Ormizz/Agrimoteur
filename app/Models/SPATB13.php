@@ -14,6 +14,7 @@ class SPATB13 extends Model
     protected $table='spatb13';
 
     protected $fillable=[
+        'idProduitAgricole',
         'LibProduitAgricole'
     ];
 }

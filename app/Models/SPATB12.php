@@ -13,6 +13,7 @@ class SPATB12 extends Model
     protected $table='spatb12';
 
     protected $fillable=[
+        'idProduitPhyto',
         'LibProduitPhyto'
     ];
 }

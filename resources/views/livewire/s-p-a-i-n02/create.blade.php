@@ -1,3 +1,6 @@
 <div>
-    {{-- Nothing in the world is as soft and yielding as water. --}}
+create
+    <input type="text" wire:model="numtypecontrat" placeholder="id">
+    <input type="text" wire:model="libtypecontrat" placeholder="Libelle">
+    <button wire:click="addTypeContrat" type="submit">Valider</button>
 </div>

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //table plantation
         Schema::create('spatb11', function (Blueprint $table) {
-            $table->id();
+            $table->string("idPlantation")->primary();
             $table->string("LibPlantation");
             $table->string("idPlanteur")->foreign("idPlanteur")->references("id")->on("SPATB10");
             $table->timestamps();

@@ -14,6 +14,9 @@ class SPATB04 extends Model
     protected $table='spatb04';
 
     protected $fillable = [
+        'idEtre',
+        'idContrat',
+        'idTypeContrat',
         'MntContratAvance'
     ];
 }

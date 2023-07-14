@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //modelePaiement
         Schema::create('spatb03', function (Blueprint $table) {
-            $table->id();
+            $table->string("idModelePaiement")->primary();
             $table->string("LibModelePaiement");
             $table->timestamps();
         });

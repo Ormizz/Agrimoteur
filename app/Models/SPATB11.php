@@ -14,6 +14,9 @@ class SPATB11 extends Model
     protected $table='spatb11';
 
     protected $fillable=[
-        'LibPlantation'
+        'idPlantation',
+        'LibPlantation',
+        'idPlanteur'
+        
     ];
 }

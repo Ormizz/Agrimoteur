@@ -12,8 +12,10 @@ class SPATB01 extends Model
     use HasFactory;
 
     protected $table='spatb01';
+   //La propriété est nommée $table et est utilisée pour spécifier le nom de la table associée à ce modèle dans une base de données.
 
     protected $fillable =[
+        'idContrat',
         'DteContrat',
         'DureeContrat',
         'idParcelle',

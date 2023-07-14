@@ -13,6 +13,7 @@ class SPATB02 extends Model
     protected $table='spatb02';
 
     protected $fillable = [
+        'idTypeContrat',
         'LibTypeContrat'
     ];
 }

@@ -13,12 +13,12 @@ return new class extends Migration
     {
         //table contrat
         Schema::create('spatb01', function (Blueprint $table) {
-            $table->id();
+            $table->string("idContrat")->primary();
             $table->date("DteContrat");
             $table->time("DureeContrat");
-            $table->string("idParcelle")->foreign("idParcelle")->references("id")->on("SPATB15"); 
-            $table->string("idTypeContrat")->foreign("idTypeContrat")->references("id")->on("SPATB02");    
-            // IdEncadreur??                      
+            $table->string("idParcelle")->foreign("idParcelle")->references("id")->on("SPATB15");
+            $table->string("idTypeContrat")->foreign("idTypeContrat")->references("id")->on("SPATB02");
+            // IdEncadreur??
             $table->timestamps();
         });
     }

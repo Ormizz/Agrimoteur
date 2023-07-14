@@ -14,9 +14,14 @@ class SPATB10 extends Model
     protected $table='spatb010';
 
     protected $fillable =[
+        'idPlanteur',
         'Nom',
         'Prenom',
         'Adresse',
-        'NbreParcelle'
+        'NbreParcelle',
+        'idSexe',
+        'idPays',
+        'idTypeContrat'
+      // 'idEncadreur',
     ];
 }

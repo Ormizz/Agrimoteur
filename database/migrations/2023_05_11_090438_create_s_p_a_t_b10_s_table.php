@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //table Planteur
         Schema::create('spatb10', function (Blueprint $table) {
-            $table->id();
+            $table->string("idPlanteur")->primary();
             $table->string("Nom");
             $table->string("Prenom");
             $table->string("Adresse");
@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string("idListeParcelle"); // a revoir
             $table->string("idSexe")->foreign("idSexe")->references("id")->on("SPATB41");
             $table->string("idPays")->foreign("idPays")->references("id")->on("SPATB33");
-            $table->string("idEncadreur");// a revoir 
+            $table->string("idEncadreur");// a revoir
             $table->string("idTypeContrat")->foreign("idTypeContrat")->references("id")->on("SPATB02");
             $table->timestamps();
         });

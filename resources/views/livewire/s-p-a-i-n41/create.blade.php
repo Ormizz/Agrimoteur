@@ -1,6 +1,5 @@
 
 <div>
-
     create
     <input type="text" wire:model="num">
     <input type="text" wire:model="NatureSexe">

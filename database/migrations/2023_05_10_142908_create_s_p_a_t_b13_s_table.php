@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //produitAgricole
         Schema::create('spatb13', function (Blueprint $table) {
-            $table->id();
+            $table->string("idProduitAgricole")->primary();
             $table->string("LibProduitAgricole");
             $table->timestamps();
         });

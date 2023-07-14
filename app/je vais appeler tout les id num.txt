@@ -1,0 +1,1 @@
+je vais appeler tout les id  num avec le nom de l'attribut tout minuscule

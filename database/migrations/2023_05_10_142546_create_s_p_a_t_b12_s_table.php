@@ -14,7 +14,7 @@ return new class extends Migration
     {
         //produitphyto
         Schema::create('spatb12', function (Blueprint $table) {
-            $table->id();
+            $table->string("idProduitPhyto")->primary();
             $table->string("LibProduitPhyto");
             $table->timestamps();
         });

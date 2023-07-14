@@ -14,7 +14,7 @@ return new class extends Migration
     {
         // table etre
         Schema::create('spatb04', function (Blueprint $table) {
-            $table->id();
+            $table->string("idEtre")->primary();
             $table->string("idContrat")->foreign("idContrat")->references("id")->on("SPATB01");
             $table->string("idType")->foreign("idType")->references("id")->on("SPATB02");
             $table->UnsignedBigInteger("MntContratAvance");

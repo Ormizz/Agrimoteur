@@ -14,12 +14,57 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('folder.index');
 });
 
-Route::get('/SPATB41', \App\Http\Livewire\SPATB41\Index::class)->name('SPATB41List');
-Route::get('/SPATB41/create', \App\Http\Livewire\SPATB41\Create::class)->name('SPATB41Create');
-Route::get('/SPATB41/edit/{idSexe}', \App\Http\Livewire\SPATB41\Edit::class)->name('SPATB41Edit');
+//SPATB01 crud
+Route::get('/SPAIN01/create',\App\Http\Livewire\SPAIN01\Create::class)->name('SPAIN01create');
+Route::get('/SPAIN01/edit/{numcontrat}',\App\Http\Livewire\SPAIN01\Edit::class)->name('SPAIN01Edit');
+Route::get('/SPAIN01',\App\Http\Livewire\SPAIN01\Index::class)->name('SPAIN01List');
+
+//SPATB02 crud
+Route::get('/SPAIN02/create',\App\Http\Livewire\SPAIN02\Create::class)->name('SPAIN02create');
+Route::get('/SPAIN02/edit/{numtypecontrat}',\App\Http\Livewire\SPAIN02\Edit::class)->name('SPAIN02Edit');
+Route::get('/SPAIN02',\App\Http\Livewire\SPAIN02\Index::class)->name('SPAIN02List');
+
+//SPATB03 crud
+Route::get('/SPAIN03/create',\App\Http\Livewire\SPAIN03\Create::class)->name('SPAIN03create');
+Route::get('/SPAIN03/edit/{nummodelepaiement}',\App\Http\Livewire\SPAIN03\Edit::class)->name('SPAIN03Edit');
+Route::get('/SPAIN03',\App\Http\Livewire\SPAIN03\Index::class)->name('SPAIN03List');
+
+
+//SPATB12
+Route::get('/SPAIN12/create',\App\Http\Livewire\SPAIN12\Create::class)->name('SPAIN12create');
+Route::get('/SPAIN12',\App\Http\Livewire\SPAIN12\Index::class)->name('SPAIN12List');
+Route::get('/SPAIN02/edit/{numtypecontrat}',\App\Http\Livewire\SPAIN02\Edit::class)->name('SPAIN02Edit');
+
+//SPATB14 Crud
+Route::get('/SPAIN14', \App\Http\Livewire\SPAIN14\Index::class)->name('SPAIN14List');
+Route::get('/SPAIN14/create', \App\Http\Livewire\SPAIN14\Create::class)->name('SPAIN14Create');
+// Route::get('/SPAIN14/edit/{typeuserid}', \App\Http\Livewire\SPAIN14\Edit::class)->name('SPAIN14Edit');
+
+//SPATB15 Crud
+Route::get('/SPAIN15', \App\Http\Livewire\SPAIN15\Index::class)->name('SPAIN15List');
+Route::get('/SPAIN15/create', \App\Http\Livewire\SPAIN15\Create::class)->name('SPAIN15Create');
+Route::get('/SPAIN15/edit{Localisation}', \App\Http\Livewire\SPAIN15\Create::class)->name('SPAIN15Edit');
+
+//SPATB17 Crud
+Route::get('/SPAIN17', \App\Http\Livewire\SPAIN17\Index::class)->name('SPAIN17List');
+Route::get('/SPAIN17/create', \App\Http\Livewire\SPAIN17\Create::class)->name('SPAIN17Create');
+//Route::get('/SPAIN17/edit{Localisation}', \App\Http\Livewire\SPAIN17\Create::class)->name('SPAIN17Edit');
+
+//SPATB20 Crud
+Route::get('/SPAIN20', \App\Http\Livewire\SPAIN20\Index::class)->name('SPAIN20List');
+Route::get('/SPAIN20/create', \App\Http\Livewire\SPAIN20\Create::class)->name('SPAIN20Create');
+//Route::get('/SPAIN20/edit{Localisation}', \App\Http\Livewire\SPAIN20\Create::class)->name('SPAIN20Edit');
+
+//SPATB21 Crud
+Route::get('/SPAIN21', \App\Http\Livewire\SPAIN21\Index::class)->name('SPAIN21List');
+Route::get('/SPAIN21/create', \App\Http\Livewire\SPAIN21\Create::class)->name('SPAIN21Create');
+//Route::get('/SPAIN21/edit{Localisation}', \App\Http\Livewire\SPAIN21\Create::class)->name('SPAIN21Edit');
+
+
+
 //SPATB41 Crud
 Route::get('/SPAIN41', \App\Http\Livewire\SPAIN41\Index::class)->name('SPAIN41List');
 Route::get('/SPAIN41/create', \App\Http\Livewire\SPAIN41\Create::class)->name('SPAIN41Create');
@@ -29,3 +74,36 @@ Route::get('/SPAIN41/edit/{idSexe}', \App\Http\Livewire\SPAIN41\Edit::class)->na
 Route::get('/SPAIN43', \App\Http\Livewire\SPAIN43\Index::class)->name('SPAIN43List');
 Route::get('/SPAIN43/create', \App\Http\Livewire\SPAIN43\Create::class)->name('SPAIN43Create');
 Route::get('/SPAIN43/edit/{typeuserid}', \App\Http\Livewire\SPAIN43\Edit::class)->name('SPAIN43Edit');
+
+
+
+//SPATB33 Crud
+Route::get('/SPAIN33', \App\Http\Livewire\SPAIN33\Index::class)->name('SPAIN33List');
+Route::get('/SPAIN33/create', \App\Http\Livewire\SPAIN33\Create::class)->name('SPAIN33Create');
+//Route::get('/SPAIN33/edit{Localisation}', \App\Http\Livewire\SPAIN33\Create::class)->name('SPAIN33Edit');
+
+//SPATB34 Crud
+Route::get('/SPAIN34', \App\Http\Livewire\SPAIN34\Index::class)->name('SPAIN34List');
+Route::get('/SPAIN34/create', \App\Http\Livewire\SPAIN34\Create::class)->name('SPAIN34Create');
+//Route::get('/SPAIN34/edit{Localisation}', \App\Http\Livewire\SPAIN34\Create::class)->name('SPAIN34Edit');
+
+//SPATB35 Crud
+Route::get('/SPAIN35', \App\Http\Livewire\SPAIN15\Index::class)->name('SPAIN35List');
+Route::get('/SPAIN35/create', \App\Http\Livewire\SPAIN15\Create::class)->name('SPAIN35Create');
+//Route::get('/SPAIN35/edit{Localisation}', \App\Http\Livewire\SPAIN35\Create::class)->name('SPAIN35Edit');
+
+//SPATB40 Crud
+Route::get('/SPATB40', \App\Http\Livewire\SPATB40\Index::class)->name('SPAIN40List');
+Route::get('/SPATB40/create', \App\Http\Livewire\SPATB40\Create::class)->name('SPAIN40Create');
+Route::get('/SPATB40/edit/{personnelid}', \App\Http\Livewire\SPATB40\Edit::class)->name('SPAIN40Edit');
+
+//SPATB36 Crud
+Route::get('/SPATB36', \App\Http\Livewire\SPATB36\Index::class)->name('SPAIN36List');
+Route::get('/SPATB36/create', \App\Http\Livewire\SPATB36\Create::class)->name('SPAIN36Create');
+Route::get('/SPATB36/edit/{Navireid}', \App\Http\Livewire\SPATB36\Edit::class)->name('SPAIN36Edit');
+
+//SPATB44 Crud
+Route::get('/SPATB44', \App\Http\Livewire\SPATB44\Index::class)->name('SPAIN44List');
+Route::get('/SPATB44/create', \App\Http\Livewire\SPATB44\Create::class)->name('SPAIN44Create');
+Route::get('/SPATB44/edit/{fonctionid}', \App\Http\Livewire\SPATB44\Edit::class)->name('SPAIN44Edit');
+

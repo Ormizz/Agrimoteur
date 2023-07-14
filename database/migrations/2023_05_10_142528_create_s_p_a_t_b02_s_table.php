@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //table typecontrat
         Schema::create('spatb02', function (Blueprint $table) {
-            $table->id();
+            $table->string("idTypeContrat")->primary();
             $table->string("LibTypeContrat");
             $table->timestamps();
         });

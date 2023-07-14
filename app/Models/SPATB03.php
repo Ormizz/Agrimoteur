@@ -13,6 +13,7 @@ class SPATB03 extends Model
     protected $table='spatb03';
 
     protected $fillable =[
+        'idModelePaiement',
         'LibModelePaiement'
     ];
 }
