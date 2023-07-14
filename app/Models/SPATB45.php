@@ -10,8 +10,12 @@ class SPATB45 extends Model
 {
     use HasFactory;
 
-    
+
     protected $table = 'spatb45';
+
+    public $incrementing = false;
+
+    protected $keyType = 'string';
 
     protected $fillable = [
         'LibNiveauAcces'

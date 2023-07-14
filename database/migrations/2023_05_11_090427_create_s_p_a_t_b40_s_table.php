@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //table personnel
         Schema::create('spatb40', function (Blueprint $table) {
-            $table->id();
+            $table->string('idPers')->primary();
             $table->string("Nom");
             $table->string("Prenom");
             $table->date("DteNaissance");
